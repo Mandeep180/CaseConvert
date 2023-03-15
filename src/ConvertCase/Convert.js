@@ -24,11 +24,11 @@ const Capitalize=()=>{
 }
 
 //reverse
-
 const ReverseCase=()=>{
     let newText=myText.split('').reverse().join('');
     setMyText(newText);
 }
+
 //clear
 const Clear = ()=>{
     setMyText('');
@@ -40,8 +40,9 @@ const Clear = ()=>{
     <div className='container'>
         <h1 className= 'text-center heading mt-5'>ConvertCase</h1>
       <div className= 'line'></div>
+      <h2 className="heading mt-5">Enter your text here to see changes</h2>
       <form>
-       <div class="mb-3 mt-5">
+       <div class="mb-3">
         <textarea class="form-control" id="exampleFormControlTextarea1" 
         onChange={Onchange} value={myText} rows="8">
         </textarea>
